@@ -4,7 +4,7 @@ services:
     image: postgres:12.0-alpine
     volumes:
       - db-data:/var/lib/postgresql/data
-    
+
   app:
     build: .
     command: bundle exec puma -C config/puma.rb
